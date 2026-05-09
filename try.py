@@ -85,10 +85,6 @@ def parse_student_list_to_excel(pdf_path, excel_path):
 
             current_line = line
 
-        else:
-            # Continuation of previous line
-            current_line += " " + line
-
     # Add last record
     if current_line:
         merged_lines.append(current_line.strip())
